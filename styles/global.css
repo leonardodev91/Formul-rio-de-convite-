@@ -1,0 +1,42 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-leckerli: 'Leckerli One', cursive;
+    --font-baloo: 'Baloo 2', sans-serif;
+    --font-open-sans: 'Open Sans', sans-serif;
+
+    --logo: 400 2.5rem/1.5 var(--font-leckerli);
+    --heading-md: 400 1.75rem/1.5 var(--font-baloo);
+    --heading-sm: 400 1.125rem/1.4 var(--font-baloo);
+    --body-md: 400 1rem/1.5 var(--font-open-sans);
+    --body-sm: 400 0.875rem/1.5 var(--font-open-sans);
+    --body-xs: 400  0.875rem/1.4 var(--font-open-sans);
+
+    --text-body: #C8CDD0;
+    --text-heading: #F9F9F9;
+    --shape-background:#131516;
+    --shape-body:#212427;
+    --shape-button:#2D3136;
+    --shape-hover:#383D42;
+    --input-base:#1C1F21;
+    --input-stroke:#363B40;
+    --input-placeholder:#869198;
+    --danger:#FF5959;
+    --brand-light:#59B2FF;
+    --brand-mid:#3487CF;
+    --brand-dark:#1D6FB6;
+}
+
+body {
+    overflow: hidden;
+    
+}
+
+h1 {
+    font: var(--logo);
+    color: #FF598B;
+}
