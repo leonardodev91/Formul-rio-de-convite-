@@ -1,34 +1,26 @@
 #app {
     display: grid;
-    grid-template-columns: 51.25% 48.75%;
+    grid-template-columns: 1fr 1fr; /* divide igualmente os lados */
     background-color: var(--shape-body);
-
     height: 100vh;
-    width: 51.25rem;
+    width: 100vw; /* pega a tela toda */
     overflow: hidden;
-
 }
 aside {
-    padding: 0;
+    height: 100%;
+    width: 100%;
     position: relative;
     border-radius: 16px;
-    overflow: hidden; /* isso faz o border-radius funcionar no background */
+    overflow: hidden;
+
     background-image: url(../assets/image/background.svg);
-    background-size: cover;
-    background-position: top;
+    background-size: cover; /* preenche a área toda */
+    background-position: center; /* centraliza */
     background-repeat: no-repeat;
+
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    height: 100vh;
-  }
-
-main {
-    overflow: auto;
-    padding: 5rem;
-    
-    
-
 }
 
 .aside-container {
@@ -37,22 +29,35 @@ main {
     flex-direction: column;
     gap: 1rem;
     z-index: 1;
-  }
-  
+}
 
 .logomarca {
-    display: flex;
-    position: absolute;
-    margin-left: 2rem;
+    margin-bottom: 2rem;
 }
 
 .branding {
-    position: absolute;
-    margin-top: 8rem;
-    margin-left: 1rem;
+    margin-top: 2rem;
+}
+
+.branding h1 {
+    font: var(--logo);
+    color: #FF598B;
 }
 
 .branding span {
     font: var(--body-xs);
     color: var(--text-heading);
 }
+
+main {
+    overflow: auto;
+    padding: 5rem;
+    height: 100vh;
+    background-color: var(--shape-background);
+}
+
+.main-container {
+    max-width: 33rem;
+    margin: 0 auto;
+}
+
