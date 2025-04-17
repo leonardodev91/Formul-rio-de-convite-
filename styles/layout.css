@@ -1,21 +1,21 @@
 #app {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* divide igualmente os lados */
+    grid-template-columns: 1fr 1fr; 
     background-color: var(--shape-body);
     height: 100vh;
-    width: 100vw; /* pega a tela toda */
+    width: 100vw; 
     overflow: hidden;
 }
 aside {
     height: 100%;
     width: 100%;
     position: relative;
-    border-radius: 16px;
+    border-radius: 1rem;
     overflow: hidden;
 
     background-image: url(../assets/image/background.svg);
-    background-size: cover; /* preenche a área toda */
-    background-position: center; /* centraliza */
+    background-size: cover; 
+    background-position: center; 
     background-repeat: no-repeat;
 
     display: flex;
@@ -54,10 +54,27 @@ main {
     padding: 5rem;
     height: 100vh;
     background-color: var(--shape-background);
+    border-radius: 1rem;
 }
 
 .main-container {
     max-width: 33rem;
     margin: 0 auto;
+    padding: 3rem;
+    
+}
+.info span {
+    font: var(--heading-md);
+    color: var(--text-body);
+}
+
+.info2 {
+    display: flex;
+    gap: 1rem;
+}
+
+.info2 h2 {
+    font: var(--body-sm);
+    color: var(--text-heading);
 }
 

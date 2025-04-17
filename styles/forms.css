@@ -1,0 +1,73 @@
+@import url(fields/index.css);
+
+.main-container {
+    .info2 {
+        margin-top: 4rem;
+
+        
+    }
+} 
+
+form {
+    margin-top: 3rem;
+}
+
+fieldset {
+    border: none;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.box {
+    border: 1px solid var(--shape-button);
+    border-radius: 0.50rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: .15rem solid var( --brand-dark);
+}
+
+.frame {
+    margin-top: 2rem;
+    display: flex;
+
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem;
+  
+    width: 35rem;
+    height: 2.5rem;
+  }
+  
+  .color-option {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 62rem;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+    
+  }
+  
+  .color-option input {
+    display: none;
+  }
+  
+  .color-option input:checked + .color-option,
+  .color-option:has(input:checked) {
+    border: 0.25rem solid var(--brand-light);
+  }
+  

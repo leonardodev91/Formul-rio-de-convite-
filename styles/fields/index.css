@@ -1,0 +1,14 @@
+input, textarea, select {
+    appearance: none;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--shape-button);
+    border-radius: 0.50rem;
+    background-color: var(--input-base);
+    
+}
+
+label {
+    font: var( --body-sm);
+    color: var( --text-body);
+}

@@ -33,10 +33,20 @@
 
 body {
     overflow: hidden;
-    
+
+
+    font: var(--body-md); 
+    color: var(--text-heading);   
 }
 
-h1 {
-    font: var(--logo);
-    color: #FF598B;
+
+h2, h3 {
+
+    font: var(--body-sm);
+    color: var(--text-body);
 }
+
+img {
+    max-width: 100%;
+}
+
